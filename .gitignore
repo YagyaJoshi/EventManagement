@@ -1,0 +1,9 @@
+EventManagement/.vs/
+EventManagement/EventManagement.API/bin/
+EventManagement/EventManagement.API/obj/
+EventManagement/EventManagement.BusinessLogic/bin/
+EventManagement/EventManagement.BusinessLogic/obj/
+EventManagement/EventManagement.DataAccess/bin/
+EventManagement/EventManagement.DataAccess/obj/
+EventManagement/EventManagement.Utilities/bin/
+EventManagement/EventManagement.Utilities/obj/
