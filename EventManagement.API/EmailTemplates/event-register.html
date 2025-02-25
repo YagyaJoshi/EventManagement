@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Confirmation</title>
+</head>
+
+<body
+    style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; margin: 0; padding: 20px;">
+    <table width="100%" cellspacing="0" cellpadding="20"
+        style="max-width: 800px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <tr>
+            <td align="left">
+                <!--<img src="{{OrganizationLogo}}" alt="Organization Logo" style="width: 100px; height: 100px;" />-->
+                <img src="{{OrganizationLogo}}" alt="Organization Logo"
+                    style="max-width: 140px;max-height: 80px;object-fit: contain;object-position: center;background: #f5f5f5;padding: 6px;" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Dear {{FullName}},<br />
+                <p style="margin: 0;">Congratulations! 🎉 You’ve successfully registered for the
+                    <strong>{{EventName}}</strong> — we can’t
+                    wait to see you there!</p>
+            </td>
+        </tr>
+        <tr style="padding-top: 0;">
+            <td style="padding-top: 0;">
+                <p style="margin: 0;">{{GuestRegistrationFees}}</p>
+                <p style="margin: 0;">{{accommodationpreferences}}</p>
+                <p style="margin: 0;">{{VisaAssistance}}</p>
+                <p style="margin: 0;">{{VisaLetter}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #e0e0e0;">
+                <table width="100%" cellspacing="0" cellpadding="0">
+                    <tr style="font-weight: bold;">
+                        <td style="font-size: 18px;">Summary</td>
+                    </tr>
+                    <tr>
+                        <td>Number of guests</td>
+                        <td align="right">{{NumberOfGuests}}</td>
+                    </tr>
+                    <tr>
+                        <td>Number of visas</td>
+                        <td align="right">{{NumberOfVisas}}</td>
+                    </tr>
+                    <tr>
+                        <td>Total visa fees</td>
+                        <td align="right">{{TotalVisaFees}} USD</td>
+                    </tr>
+                    <tr>
+                        <td>Total accommodation</td>
+                        <td align="right">{{TotalAccommodationFees}} USD</td>
+                    </tr>
+                    <tr>
+                        <td>Total registration fees</td>
+                        <td align="right">{{TotalRegistrationFees}} USD</td>
+                    </tr>
+                    <tr>
+                        <td>Total Penalty fees</td>
+                        <td align="right">{{PenaltyAmount}} USD</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #e0e0e0;">
+                <table width="100%" cellspacing="0" cellpadding="0">
+                    <tr style="font-weight: bold;">
+                        <td>Grand Total (USD)</td>
+                        <td align="right" style="white-space: nowrap;">{{GrandTotalUSD}} USD</td>
+                    </tr>
+                    <tr style="font-weight: bold;">
+                        <td>Grand Total (BHD)</td>
+                        <td align="right" style="white-space: nowrap;">{{GrandTotalBHD}} BHD</td>
+                    </tr>
+                    <tr style="font-weight: bold;">
+                        <td>Total Paid Amount (USD)</td>
+                        <td align="right" style="white-space: nowrap;">{{PaidAmount}} USD</td>
+                    </tr>
+                    <tr>
+                        <td width="100%">
+                            <p style="margin-top: 20px;">Thank you for registering! If you have any questions, feel free
+                                to contact us.</p>
+                            <p style="font-weight: bold;">Best regards,<br />{{OrganizationName}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

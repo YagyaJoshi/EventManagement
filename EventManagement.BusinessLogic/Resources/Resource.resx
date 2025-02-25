@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DELETE_EVENT_SUCCESS" xml:space="preserve">
+    <value>Event deleted</value>
+  </data>
+  <data name="DELETE_HOTEL_SUCCESS" xml:space="preserve">
+    <value>Hotel deleted</value>
+  </data>
+  <data name="DELETE_STAFF_SUCCESS" xml:space="preserve">
+    <value>Staff deleted</value>
+  </data>
+  <data name="ADD_EVENT_SUCCESS" xml:space="preserve">
+    <value>Event added</value>
+  </data>
+  <data name="UPDATE_EVENT_SUCCESS" xml:space="preserve">
+    <value>Event updated</value>
+  </data>
+  <data name="ADD_HOTEL_SUCCESS" xml:space="preserve">
+    <value>Hotel added</value>
+  </data>
+  <data name="UPDATE_HOTEL_SUCCESS" xml:space="preserve">
+    <value>Hotel updated</value>
+  </data>
+  <data name="ADD_PAYMENT_PROVIDER_SUCCESS" xml:space="preserve">
+    <value>Payment provider added</value>
+  </data>
+  <data name="UPDATE_PAYMENT_PROVIDER_SUCCESS" xml:space="preserve">
+    <value>Payment provider updated</value>
+  </data>
+  <data name="UPDATE_STAFF_SUCCESS" xml:space="preserve">
+    <value>Staff updated</value>
+  </data>
+  <data name="ADD_STAFF_SUCCESS" xml:space="preserve">
+    <value>Staff added</value>
+  </data>
+  <data name="DATABASE_ERROR_1001" xml:space="preserve">
+    <value>An event with this name already exists.</value>
+  </data>
+  <data name="DATABASE_ERROR_1002" xml:space="preserve">
+    <value>Event has already started and cannot be edited.</value>
+  </data>
+  <data name="DATABASE_ERROR_1003" xml:space="preserve">
+    <value>Event not found.</value>
+  </data>
+  <data name="INACTIVE_ACCOUNT" xml:space="preserve">
+    <value>This account is no longer active.</value>
+  </data>
+  <data name="INCORRECT_EMAIL_PASSWORD" xml:space="preserve">
+    <value>Email or password is incorrect</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="ADD_SUBSCRIPTION_SUCCESS" xml:space="preserve">
+    <value>Subscription added</value>
+  </data>
+  <data name="SIGNIN_SUCCESS" xml:space="preserve">
+    <value>User logged in  successfully.</value>
+  </data>
+  <data name="SIGNUP_SUCCESS" xml:space="preserve">
+    <value>Resgistered successfully.</value>
+  </data>
+  <data name="ADD_ORGANIZATION_SUCCESS" xml:space="preserve">
+    <value>Organization added</value>
+  </data>
+  <data name="INVALID_TOKEN" xml:space="preserve">
+    <value>INVALID_TOKEN</value>
+  </data>
+  <data name="UPDATE_ORGANIZATION_SUCCESS" xml:space="preserve">
+    <value>Organization updated</value>
+  </data>
+  <data name="UPDATE_PROFILE_SUCCESS" xml:space="preserve">
+    <value>Profile updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1004" xml:space="preserve">
+    <value>User does not exist</value>
+  </data>
+  <data name="DATABASE_ERROR_1005" xml:space="preserve">
+    <value>Old password is incorrect.</value>
+  </data>
+  <data name="CHANGE_PASSWORD_SUCCESS" xml:space="preserve">
+    <value>Password changed</value>
+  </data>
+  <data name="DATABASE_ERROR_1006" xml:space="preserve">
+    <value>Email already exists</value>
+  </data>
+  <data name="DATABASE_ERROR_1007" xml:space="preserve">
+    <value>An organization with this name already exists.</value>
+  </data>
+  <data name="DATABASE_ERROR_1008" xml:space="preserve">
+    <value>Cannot update payment configuration because there are ongoing events associated with this payment provider.</value>
+  </data>
+  <data name="DATABASE_ERROR_1009" xml:space="preserve">
+    <value>Organization does not exist</value>
+  </data>
+  <data name="DATABASE_ERROR_1010" xml:space="preserve">
+    <value>Organization payment provider does not exist</value>
+  </data>
+  <data name="DATABASE_ERROR_1011" xml:space="preserve">
+    <value>Staff with this email already exists</value>
+  </data>
+  <data name="DATABASE_ERROR_1012" xml:space="preserve">
+    <value>Hotel not found</value>
+  </data>
+  <data name="PENDING_ORGANIZATION" xml:space="preserve">
+    <value>Your organization's status is pending or inactive. Kindly reach out to the administrator for assistance.</value>
+  </data>
+  <data name="INVALID_PLAN" xml:space="preserve">
+    <value>This plan does not exist</value>
+  </data>
+  <data name="INVALID_SUBSCRIPTION" xml:space="preserve">
+    <value>Subscription does not exist</value>
+  </data>
+  <data name="CANCEL_SUBSCRIPTION" xml:space="preserve">
+    <value>Subscription cancelled</value>
+  </data>
+  <data name="SIGNIN1_SUCCESS" xml:space="preserve">
+    <value>Customer logged in  successfully.</value>
+  </data>
+  <data name="ORGANIZATION_REQUIRED" xml:space="preserve">
+    <value>OrganizationId is required.</value>
+  </data>
+  <data name="ADD_GUEST_SUCCESS" xml:space="preserve">
+    <value>Guest added</value>
+  </data>
+  <data name="DELETE_GUEST_SUCCESS" xml:space="preserve">
+    <value>Guest deleted</value>
+  </data>
+  <data name="UPDATE_GUEST_SUCCESS" xml:space="preserve">
+    <value>Guest updated</value>
+  </data>
+  <data name="DELETE_ORGANIZATION_SUCCESS" xml:space="preserve">
+    <value>Organization deleted</value>
+  </data>
+  <data name="DATABASE_ERROR_1013" xml:space="preserve">
+    <value>Order not found.</value>
+  </data>
+  <data name="DATABASE_ERROR_1014" xml:space="preserve">
+    <value>Please complete your draft order before creating a new one.</value>
+  </data>
+  <data name="ADD_VISA_FEES_SUCCESS" xml:space="preserve">
+    <value>Visa fees added</value>
+  </data>
+  <data name="UPDATE_VISA_FEES_SUCCESS" xml:space="preserve">
+    <value>Visa fees updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1015" xml:space="preserve">
+    <value>Visa fees not found</value>
+  </data>
+  <data name="DELETE_ACCOMMODATION_SUCCESS" xml:space="preserve">
+    <value>Accommodation info deleted</value>
+  </data>
+  <data name="DATABASE_ERROR_1016" xml:space="preserve">
+    <value>Deletion failed: This hotel is currently booked and cannot be deleted.</value>
+  </data>
+  <data name="DATABASE_ERROR_1017" xml:space="preserve">
+    <value>Deletion failed: This room has active bookings.</value>
+  </data>
+  <data name="DATABASE_ERROR_1018" xml:space="preserve">
+    <value>Deletion failed: This event has active bookings.</value>
+  </data>
+  <data name="ATLEAST_ONE_ROLE_REQUIRED" xml:space="preserve">
+    <value>At least one role is required.</value>
+  </data>
+  <data name="ATLEAST_ONE_ROOM_REQUIRED" xml:space="preserve">
+    <value>At least one room is required.</value>
+  </data>
+  <data name="ADD_TRANSCTION_DETAIL" xml:space="preserve">
+    <value>Transaction added</value>
+  </data>
+  <data name="INVALID_GUEST_OCCUPANCY" xml:space="preserve">
+    <value>The number of guests must be between the minimum and maximum occupancy.</value>
+  </data>
+  <data name="BOOKING_NOT_FOUND" xml:space="preserve">
+    <value>Booking not found</value>
+  </data>
+  <data name="DATABASE_ERROR_1019" xml:space="preserve">
+    <value>Payment Details Already Saved</value>
+  </data>
+  <data name="ADD_HOTEL_BOOKING_SUCCESS" xml:space="preserve">
+    <value>Hotel booking added</value>
+  </data>
+  <data name="UPDATE_HOTEL_BOOKING_SUCCESS" xml:space="preserve">
+    <value>Hotel booking updated</value>
+  </data>
+  <data name="ADD_VISA_SUCCESS" xml:space="preserve">
+    <value>Visa added</value>
+  </data>
+  <data name="UPDATE_VISA_SUCCESS" xml:space="preserve">
+    <value>Visa updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1020" xml:space="preserve">
+    <value>Guest not found.</value>
+  </data>
+  <data name="VISA_UPLOADED" xml:space="preserve">
+    <value>Visa uploaded</value>
+  </data>
+  <data name="VISA_REMOVED" xml:space="preserve">
+    <value>Visa removed</value>
+  </data>
+  <data name="DATABASE_ERROR_1021" xml:space="preserve">
+    <value>Setup currency before creating event.</value>
+  </data>
+  <data name="DATABASE_ERROR_1022" xml:space="preserve">
+    <value>Event not found for the given GuestId.</value>
+  </data>
+  <data name="DATABASE_ERROR_1023" xml:space="preserve">
+    <value>Old guestId does not exist</value>
+  </data>
+  <data name="DATABASE_ERROR_1024" xml:space="preserve">
+    <value>New guestId does not exist</value>
+  </data>
+  <data name="DATABASE_ERROR_1025" xml:space="preserve">
+    <value>No Event found for the given OrderId</value>
+  </data>
+  <data name="DATABASE_ERROR_1026" xml:space="preserve">
+    <value>No penalty information found for the given eventId</value>
+  </data>
+  <data name="DATABASE_ERROR_1027" xml:space="preserve">
+    <value>OldGuestId and NewGuestId do not belong to the same order</value>
+  </data>
+  <data name="DATABASE_ERROR_1028" xml:space="preserve">
+    <value>Booking not found</value>
+  </data>
+  <data name="ADD_ORGANIZATIONTYPES_SUCCESS" xml:space="preserve">
+    <value>OrganizationTypes added</value>
+  </data>
+  <data name="UPDATE_ORGANIZATIONTYPES_SUCCESS" xml:space="preserve">
+    <value>OrganizationTypes updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1029" xml:space="preserve">
+    <value>OrganizationType not found</value>
+  </data>
+  <data name="DELETE_ORGANIZATIONTYPE_SUCCESS" xml:space="preserve">
+    <value>OrganizationType deleted</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Something went wrong. please try again later</value>
+  </data>
+  <data name="DATABASE_ERROR_1030" xml:space="preserve">
+    <value>Guest is already assigned to another hotel.</value>
+  </data>
+  <data name="CREATE_TICKET" xml:space="preserve">
+    <value>Support ticket added</value>
+  </data>
+  <data name="UPDATE_TICKET" xml:space="preserve">
+    <value>Ticket updated</value>
+  </data>
+  <data name="UPDATE_VISA_STATUS" xml:space="preserve">
+    <value>Visa status updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1031" xml:space="preserve">
+    <value>Ticket is already closed</value>
+  </data>
+  <data name="DATABASE_ERROR_1032" xml:space="preserve">
+    <value>Cannot reply to a closed ticket</value>
+  </data>
+  <data name="DATABASE_ERROR_1033" xml:space="preserve">
+    <value>Invalid ticket</value>
+  </data>
+  <data name="DATABASE_ERROR_1034" xml:space="preserve">
+    <value>Ticket not found</value>
+  </data>
+  <data name="UPDATE_ ACCREDITATION_SUCCESS" xml:space="preserve">
+    <value>Accreditation template update</value>
+  </data>
+  <data name="ADD_ACCREDITATION_SUCCESS" xml:space="preserve">
+    <value>Accreditation template uploaded</value>
+  </data>
+  <data name="DATABASE_ERROR_1035" xml:space="preserve">
+    <value>Booking already canceled</value>
+  </data>
+  <data name="DATABASE_ERROR_1036" xml:space="preserve">
+    <value>Hotel already exists</value>
+  </data>
+  <data name="CUSTOMER_NOT_FOUND" xml:space="preserve">
+    <value>Customer not found</value>
+  </data>
+  <data name="DATABASE_ERROR_1037" xml:space="preserve">
+    <value>Organization not found</value>
+  </data>
+  <data name="DATABASE_ERROR_1038" xml:space="preserve">
+    <value>Staff not found</value>
+  </data>
+  <data name="DATABASE_ERROR_1039" xml:space="preserve">
+    <value>PassportNumber required</value>
+  </data>
+  <data name="ASSIGN_TICKET_SUCCESS" xml:space="preserve">
+    <value>Ticket assigned</value>
+  </data>
+  <data name="CANCEL_BOOKING_SUCCESS" xml:space="preserve">
+    <value>Booking cancelled {1} {2}Refund of {0} USD will be credited to your wallet shortly.</value>
+  </data>
+  <data name="CANCEL_GUEST_SUCCESS" xml:space="preserve">
+    <value>Guest cancelled</value>
+  </data>
+  <data name="CLOSE_TICKET_SUCCESS" xml:space="preserve">
+    <value>Ticket closed</value>
+  </data>
+  <data name="REPLACE_GUEST_SUCCESS" xml:space="preserve">
+    <value>Guest replaced</value>
+  </data>
+  <data name="UPDATE_SUBSCRIPTION_SUCCESS" xml:space="preserve">
+    <value>Subscription updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1040" xml:space="preserve">
+    <value>This event has bookings and cannot be edited</value>
+  </data>
+  <data name="REPLY_TICKET_SUCCESS" xml:space="preserve">
+    <value>Message sent</value>
+  </data>
+  <data name="DATABASE_ERROR_1041" xml:space="preserve">
+    <value>Ticket is closed and cannot be assigned.</value>
+  </data>
+  <data name="DATABASE_ERROR_1042" xml:space="preserve">
+    <value>Only support staff or admin can assign tickets.</value>
+  </data>
+  <data name="YEAR_REQUIRED" xml:space="preserve">
+    <value>Year is required</value>
+  </data>
+  <data name="UPDATE_WALLET_SUCCESS" xml:space="preserve">
+    <value>Wallet updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1043" xml:space="preserve">
+    <value>The number of guests must be between the minimum and maximum occupancy</value>
+  </data>
+  <data name="PAYMENT_SETUP_MISSING" xml:space="preserve">
+    <value>Payment setup is incomplete. The organization needs to configure payment details to continue.</value>
+  </data>
+  <data name="DATABASE_ERROR_1044" xml:space="preserve">
+    <value>The amount is already paid</value>
+  </data>
+  <data name="STATUS_UPDATE" xml:space="preserve">
+    <value>Status update</value>
+  </data>
+  <data name="DATABASE_ERROR_1045" xml:space="preserve">
+    <value>Organization subscription is not active</value>
+  </data>
+  <data name="DEADLINE_REQUIRED_FOR_PENALTY" xml:space="preserve">
+    <value>Deadline is required</value>
+  </data>
+  <data name="ADD_ANNOUNCEMENT_SUCCESS" xml:space="preserve">
+    <value>Announcement added</value>
+  </data>
+  <data name="CONTACT_US" xml:space="preserve">
+    <value>Thank you for contacting us. Your message has been received.</value>
+  </data>
+  <data name="UPDATE_ANNOUNCEMENT_SUCCESS" xml:space="preserve">
+    <value>Announcement updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1046" xml:space="preserve">
+    <value>Announcement not found</value>
+  </data>
+  <data name="DELETE_ANNOUNCEMENT_SUCCESS" xml:space="preserve">
+    <value>Announcement deleted</value>
+  </data>
+  <data name="DATABASE_ERROR_1047" xml:space="preserve">
+    <value>Event limit exceeded</value>
+  </data>
+  <data name="DATABASE_ERROR_1048" xml:space="preserve">
+    <value>Currency update is not allowed</value>
+  </data>
+  <data name="DATABASE_ERROR_1049" xml:space="preserve">
+    <value>Invalid otp please try again.</value>
+  </data>
+  <data name="DATABASE_ERROR_1050" xml:space="preserve">
+    <value>Email does not exist.</value>
+  </data>
+  <data name="DATABASE_ERROR_1051" xml:space="preserve">
+    <value>BookingId not found</value>
+  </data>
+  <data name="OTP_SUCCESS" xml:space="preserve">
+    <value>Otp send</value>
+  </data>
+  <data name="CREATE_ORGANIZATION_SUCCESS" xml:space="preserve">
+    <value>Organization registered. Your account will be approved by the team soon.</value>
+  </data>
+  <data name="ID_DOMAIN_REQUIRED" xml:space="preserve">
+    <value>Please provide either id or domain.</value>
+  </data>
+  <data name="DATABASE_ERROR_1052" xml:space="preserve">
+    <value>Guest is already in draft</value>
+  </data>
+  <data name="DATABASE_ERROR_1053" xml:space="preserve">
+    <value>DomainName already exists</value>
+  </data>
+  <data name="AMOUNT_UPDATED" xml:space="preserve">
+    <value>Amount updated</value>
+  </data>
+  <data name="DATABASE_ERROR_1054" xml:space="preserve">
+    <value>Amount is more than unpaid amount</value>
+  </data>
+  <data name="DATABASE_ERROR_1055" xml:space="preserve">
+    <value>This email ID is not registered with our account. Please check and try again or sign up for a new account.</value>
+  </data>
+  <data name="DATABASE_ERROR_1056" xml:space="preserve">
+    <value>This staff member is assigned to active tickets and cannot be deleted.</value>
+  </data>
+  <data name="DATABASE_ERROR_1057" xml:space="preserve">
+    <value>The order you are trying to cancel has already been canceled.</value>
+  </data>
+  <data name="BANK_RECEIPT_UPLOADED" xml:space="preserve">
+    <value>Bank receipt uploaded</value>
+  </data>
+</root>

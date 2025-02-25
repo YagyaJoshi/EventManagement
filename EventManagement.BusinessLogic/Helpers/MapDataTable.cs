@@ -1,0 +1,52 @@
+﻿using EventManagement.DataAccess.Extensions;
+using System.Data;
+using System.Reflection;
+
+namespace EventManagement.BusinessLogic.Helpers
+{
+    public class MapDataTable
+    {
+        public static DataTable ToDataTable<T>(List<T> items)
+        {
+            try
+            {
+                if (items == null || items.Count == 0) return null;
+                DataTable dataTable = new DataTable(typeof(T).Name);
+
+                //Get all the properties
+                PropertyInfo[] Props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+                foreach (PropertyInfo prop in Props)
+                {
+                    //Defining type of data column gives proper data table 
+                    var type = (prop.PropertyType.IsGenericType && prop.PropertyType.GetGenericTypeDefinition() == typeof(Nullable<>) ? Nullable.GetUnderlyingType(prop.PropertyType) : prop.PropertyType);
+                    //Setting column names as Property names
+                    dataTable.Columns.Add(prop.Name, type);
+                }
+                foreach (T item in items)
+                {
+                    var values = new object[Props.Length];
+                    for (int i = 0; i < Props.Length; i++)
+                    {
+                        if (Props[i].Name == "Status" && Props[i].PropertyType == typeof(string))
+                        {
+                            values[i] = Convert.ToInt32(StatusExtensions.ToStatusEnum((string)Props[i].GetValue(item, null)));
+                        }
+                        else
+                        {
+                            //inserting property values to datatable rows
+                            values[i] = Props[i].GetValue(item, null);
+                        }
+                    }
+                    dataTable.Rows.Add(values);
+                }
+                //put a breakpoint here and check datatable
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revised Payment Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .event-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .summary {
+            background-color: #f8f8ff;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+            .summary h3 {
+                color: #333;
+                margin-top: 0;
+            }
+
+            .summary table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .summary td {
+                padding: 5px 0;
+            }
+
+            .summary tr:last-child td {
+                border-top: 1px solid #e0e0e0;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="margin-bottom: 20px">
+            <img src="{{OrganizationLogo}}" alt="Organization Logo" style="width: 100px; height: 100px;" />
+        </div>
+
+        <p>Dear {{FullName}},</p>
+
+        <p>This is to inform you that the payment details for your event booking have been updated. Please find the revised details below:</p>
+
+        <hr>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <table>
+                <tr><td><strong>Number of Guests:</strong></td><td>{{NumberOfGuests}}</td></tr>
+                <tr><td><strong>Number of Visas:</strong></td><td>{{NumberOfVisas}}</td></tr>
+                <tr><td><strong>Total Visa Fees:</strong></td><td>{{TotalVisaFees}}</td></tr>
+                <tr><td><strong>Total Accommodation:</strong></td><td>{{TotalAccommodationFees}}</td></tr>
+                <tr><td><strong>Total Registration Fees:</strong></td><td>{{TotalRegistrationFees}}</td></tr>
+                <tr><td><strong>Grand Total (USD):</strong></td><td>{{GrandTotalUSD}}</td></tr>
+                <tr><td><strong>Grand Total (BHD):</strong></td><td>{{GrandTotalBHD}}</td></tr>
+                <tr><td><strong>Total Penalty Amount (USD):</strong></td><td>{{PenaltyAmount}}</td></tr>
+                <tr><td><strong>Total Paid Amount (USD):</strong></td><td>{{PaidAmount}}</td></tr>
+                <tr><td><strong>Total Unpaid Amount (USD):</strong></td><td>{{UnpaidAmount}}</td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <p>Thank you for registering! If you have any questions, feel free to contact us.</p>
+
+        <p style="margin-top: 10px; font-weight: bold;">Best regards,<br />{{OrganizationName}}</p>
+    </div>
+</body>
+</html>
